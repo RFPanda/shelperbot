@@ -1,6 +1,3 @@
-#!/usr/bin/python3
-# -*- coding: ascii -*-
-# -*- coding: utf-8 -*-
 import telebot
 import config
 import datetime
