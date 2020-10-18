@@ -17,9 +17,9 @@ def exm(message):
 
 @bot.message_handler(commands=['week'])
 def week(message):
-    r = requests.get("https://studyfive.ga/")
+    r = requests.get("https://localdrop.ga/r.php")
     html = BS(r.content, 'html.parser')
-    rez = html.find("div", id="textwidget custom-html-widget").text
+    rez = html.find("div", id="Week").text
     bot.reply_to(message, rez)
 
 @bot.message_handler(commands=['info'])
